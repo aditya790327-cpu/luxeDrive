@@ -20,7 +20,9 @@ export default function Header() {
             <div className="w-10 h-10 bg-gradient-to-br from-[#d4af37] to-[#f5e6c8] rounded-lg flex items-center justify-center">
               <span className="text-black font-bold text-lg">L</span>
             </div>
-            <span className="text-xl font-bold text-gray-900 hidden sm:inline">LuxeDrive</span>
+            <span className="text-xl font-bold text-gray-900 hidden sm:inline">
+              LuxeDrive
+            </span>
           </Link>
 
           {/* Desktop Navigation */}

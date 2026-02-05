@@ -2,7 +2,10 @@ import { ArrowRight, Phone, Mail } from "lucide-react";
 
 export default function CTASection() {
   return (
-    <section id="cta" className="py-24 bg-gradient-to-br from-gray-900 via-gray-800 to-black relative overflow-hidden">
+    <section
+      id="cta"
+      className="py-24 bg-gradient-to-br from-gray-900 via-gray-800 to-black relative overflow-hidden"
+    >
       {/* Background Decoration */}
       <div className="absolute top-20 right-10 w-96 h-96 bg-[#d4af37] opacity-5 rounded-full blur-3xl"></div>
       <div className="absolute bottom-20 left-10 w-96 h-96 bg-[#d4af37] opacity-5 rounded-full blur-3xl"></div>
@@ -16,7 +19,8 @@ export default function CTASection() {
               <span className="text-gradient-gold"> Your Dream Car?</span>
             </h2>
             <p className="text-xl text-gray-300 leading-relaxed max-w-2xl mx-auto">
-              Contact our luxury automotive specialists today. We're here to help you find the perfect vehicle from our exclusive collection.
+              Contact our luxury automotive specialists today. We're here to
+              help you find the perfect vehicle from our exclusive collection.
             </p>
           </div>
 
@@ -65,9 +69,13 @@ export default function CTASection() {
                 placeholder="Enter your email"
                 className="flex-1 px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white placeholder-gray-400 focus:outline-none focus:border-[#d4af37] transition-colors"
               />
-              <button className="btn-primary whitespace-nowrap">Subscribe</button>
+              <button className="btn-primary whitespace-nowrap">
+                Subscribe
+              </button>
             </div>
-            <p className="text-gray-400 text-sm mt-3">Get exclusive updates on new arrivals and special offers</p>
+            <p className="text-gray-400 text-sm mt-3">
+              Get exclusive updates on new arrivals and special offers
+            </p>
           </div>
         </div>
       </div>

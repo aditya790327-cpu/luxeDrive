@@ -4,7 +4,8 @@ const categories = [
   {
     id: 1,
     name: "Sports Cars",
-    description: "High-performance vehicles engineered for speed and precision.",
+    description:
+      "High-performance vehicles engineered for speed and precision.",
     icon: Fuel,
     color: "from-red-500 to-pink-500",
     count: "18 Models",
@@ -36,12 +37,15 @@ export default function CategoriesSection() {
       <div className="container mx-auto px-4">
         {/* Section Header */}
         <div className="text-center mb-16 space-y-4">
-          <p className="text-[#d4af37] font-semibold uppercase tracking-widest">OUR COLLECTION</p>
+          <p className="text-[#d4af37] font-semibold uppercase tracking-widest">
+            OUR COLLECTION
+          </p>
           <h2 className="text-4xl sm:text-5xl font-bold text-gray-900">
             Premium Categories
           </h2>
           <p className="text-gray-600 text-lg max-w-2xl mx-auto">
-            Discover our curated selection of luxury vehicles across multiple categories
+            Discover our curated selection of luxury vehicles across multiple
+            categories
           </p>
         </div>
 
@@ -55,22 +59,33 @@ export default function CategoriesSection() {
                 className="group relative bg-white border border-gray-200 rounded-2xl p-8 hover:shadow-2xl transition-all duration-300 hover:-translate-y-2"
               >
                 {/* Background Accent */}
-                <div className={`absolute top-0 right-0 w-32 h-32 bg-gradient-to-br ${category.color} opacity-5 rounded-full blur-3xl -z-1`}></div>
+                <div
+                  className={`absolute top-0 right-0 w-32 h-32 bg-gradient-to-br ${category.color} opacity-5 rounded-full blur-3xl -z-1`}
+                ></div>
 
                 {/* Icon */}
-                <div className={`inline-flex items-center justify-center w-16 h-16 rounded-xl bg-gradient-to-br ${category.color} mb-6 group-hover:scale-110 transition-transform`}>
+                <div
+                  className={`inline-flex items-center justify-center w-16 h-16 rounded-xl bg-gradient-to-br ${category.color} mb-6 group-hover:scale-110 transition-transform`}
+                >
                   <IconComponent className="w-8 h-8 text-white" />
                 </div>
 
                 {/* Content */}
                 <div className="space-y-4">
-                  <h3 className="text-2xl font-bold text-gray-900">{category.name}</h3>
-                  <p className="text-gray-600 leading-relaxed">{category.description}</p>
+                  <h3 className="text-2xl font-bold text-gray-900">
+                    {category.name}
+                  </h3>
+                  <p className="text-gray-600 leading-relaxed">
+                    {category.description}
+                  </p>
 
                   {/* Specs */}
                   <div className="space-y-2 pt-4">
                     {category.specs.map((spec, idx) => (
-                      <div key={idx} className="flex items-center gap-2 text-sm text-gray-700">
+                      <div
+                        key={idx}
+                        className="flex items-center gap-2 text-sm text-gray-700"
+                      >
                         <span className="w-2 h-2 bg-[#d4af37] rounded-full"></span>
                         {spec}
                       </div>
@@ -79,7 +94,9 @@ export default function CategoriesSection() {
 
                   {/* Count */}
                   <div className="pt-4 border-t border-gray-200">
-                    <p className="text-[#d4af37] font-semibold text-sm">{category.count}</p>
+                    <p className="text-[#d4af37] font-semibold text-sm">
+                      {category.count}
+                    </p>
                   </div>
                 </div>
 

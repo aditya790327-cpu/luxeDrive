@@ -5,37 +5,43 @@ const reasons = [
     id: 1,
     icon: Trophy,
     title: "Certified Authentic",
-    description: "Every vehicle in our collection is authenticated and comes with full documentation.",
+    description:
+      "Every vehicle in our collection is authenticated and comes with full documentation.",
   },
   {
     id: 2,
     icon: Shield,
     title: "Premium Guarantee",
-    description: "Comprehensive warranty and insurance coverage on all our vehicles.",
+    description:
+      "Comprehensive warranty and insurance coverage on all our vehicles.",
   },
   {
     id: 3,
     icon: Users,
     title: "Expert Team",
-    description: "Our specialists provide personalized consultation and after-sales support.",
+    description:
+      "Our specialists provide personalized consultation and after-sales support.",
   },
   {
     id: 4,
     icon: Zap,
     title: "Cutting Edge Tech",
-    description: "Latest automotive technology and innovation across all categories.",
+    description:
+      "Latest automotive technology and innovation across all categories.",
   },
   {
     id: 5,
     icon: Wrench,
     title: "Maintenance Service",
-    description: "Professional servicing and maintenance by certified technicians.",
+    description:
+      "Professional servicing and maintenance by certified technicians.",
   },
   {
     id: 6,
     icon: Award,
     title: "Award Winning",
-    description: "Recognized industry leader in luxury automotive sales and service.",
+    description:
+      "Recognized industry leader in luxury automotive sales and service.",
   },
 ];
 
@@ -46,13 +52,19 @@ export default function WhyChooseUsSection() {
         {/* Section Header */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
           <div className="space-y-6">
-            <p className="text-[#d4af37] font-semibold uppercase tracking-widest">WHY CHOOSE US</p>
+            <p className="text-[#d4af37] font-semibold uppercase tracking-widest">
+              WHY CHOOSE US
+            </p>
             <h2 className="text-4xl sm:text-5xl font-bold text-gray-900">
-              Your Premier Luxury<br />
+              Your Premier Luxury
+              <br />
               <span className="text-gradient-gold">Automotive Partner</span>
             </h2>
             <p className="text-gray-600 text-lg leading-relaxed">
-              With over 15 years of experience in the luxury automotive industry, we pride ourselves on delivering exceptional service and unparalleled vehicle quality. Our commitment to excellence is evident in every interaction.
+              With over 15 years of experience in the luxury automotive
+              industry, we pride ourselves on delivering exceptional service and
+              unparalleled vehicle quality. Our commitment to excellence is
+              evident in every interaction.
             </p>
 
             {/* Key Stats */}
@@ -82,7 +94,15 @@ export default function WhyChooseUsSection() {
               xmlns="http://www.w3.org/2000/svg"
             >
               {/* Trophy/Shield Icon */}
-              <circle cx="200" cy="200" r="180" fill="none" stroke="#d4af37" strokeWidth="2" opacity="0.2" />
+              <circle
+                cx="200"
+                cy="200"
+                r="180"
+                fill="none"
+                stroke="#d4af37"
+                strokeWidth="2"
+                opacity="0.2"
+              />
 
               <path
                 d="M 200 100 L 250 140 L 260 200 L 200 280 L 140 200 L 150 140 Z"
@@ -92,7 +112,11 @@ export default function WhyChooseUsSection() {
 
               <circle cx="200" cy="140" r="30" fill="white" opacity="0.9" />
 
-              <path d="M 170 160 L 230 160 M 190 170 L 210 170 M 185 180 L 215 180" stroke="#1a1a1a" strokeWidth="2" />
+              <path
+                d="M 170 160 L 230 160 M 190 170 L 210 170 M 185 180 L 215 180"
+                stroke="#1a1a1a"
+                strokeWidth="2"
+              />
 
               {/* Checkmarks */}
               {[
@@ -102,7 +126,13 @@ export default function WhyChooseUsSection() {
                 { x: 300, y: 280 },
               ].map((pos, idx) => (
                 <g key={idx}>
-                  <circle cx={pos.x} cy={pos.y} r="25" fill="#d4af37" opacity="0.2" />
+                  <circle
+                    cx={pos.x}
+                    cy={pos.y}
+                    r="25"
+                    fill="#d4af37"
+                    opacity="0.2"
+                  />
                   <path
                     d={`M ${pos.x - 8} ${pos.y} L ${pos.x - 2} ${pos.y + 6} L ${pos.x + 8} ${pos.y - 6}`}
                     stroke="#d4af37"
@@ -128,8 +158,12 @@ export default function WhyChooseUsSection() {
                 <div className="inline-flex items-center justify-center w-12 h-12 rounded-lg bg-gradient-to-br from-[#d4af37] to-[#f5e6c8] mb-4 group-hover:scale-110 transition-transform">
                   <IconComponent className="w-6 h-6 text-gray-900" />
                 </div>
-                <h3 className="text-xl font-bold text-gray-900 mb-2">{reason.title}</h3>
-                <p className="text-gray-600 leading-relaxed">{reason.description}</p>
+                <h3 className="text-xl font-bold text-gray-900 mb-2">
+                  {reason.title}
+                </h3>
+                <p className="text-gray-600 leading-relaxed">
+                  {reason.description}
+                </p>
               </div>
             );
           })}

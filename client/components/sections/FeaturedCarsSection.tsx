@@ -61,16 +61,22 @@ const cars = [
 
 export default function FeaturedCarsSection() {
   return (
-    <section id="models" className="py-24 bg-gradient-to-br from-gray-50 to-gray-100">
+    <section
+      id="models"
+      className="py-24 bg-gradient-to-br from-gray-50 to-gray-100"
+    >
       <div className="container mx-auto px-4">
         {/* Section Header */}
         <div className="text-center mb-16 space-y-4">
-          <p className="text-[#d4af37] font-semibold uppercase tracking-widest">FEATURED MODELS</p>
+          <p className="text-[#d4af37] font-semibold uppercase tracking-widest">
+            FEATURED MODELS
+          </p>
           <h2 className="text-4xl sm:text-5xl font-bold text-gray-900">
             Our Signature Collection
           </h2>
           <p className="text-gray-600 text-lg max-w-2xl mx-auto">
-            Handpicked selections representing the pinnacle of automotive excellence
+            Handpicked selections representing the pinnacle of automotive
+            excellence
           </p>
         </div>
 
@@ -82,22 +88,30 @@ export default function FeaturedCarsSection() {
               className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-1 group"
             >
               {/* Image Section */}
-              <div className={`relative h-48 bg-gradient-to-br ${car.color} flex items-center justify-center overflow-hidden`}>
+              <div
+                className={`relative h-48 bg-gradient-to-br ${car.color} flex items-center justify-center overflow-hidden`}
+              >
                 <div className="text-8xl group-hover:scale-110 transition-transform duration-300">
                   {car.image}
                 </div>
                 {/* Badge */}
                 <div className="absolute top-4 right-4 bg-white px-3 py-1 rounded-full flex items-center gap-1">
                   <Star className="w-4 h-4 fill-yellow-400 text-yellow-400" />
-                  <span className="text-sm font-semibold text-gray-900">{car.rating}</span>
+                  <span className="text-sm font-semibold text-gray-900">
+                    {car.rating}
+                  </span>
                 </div>
               </div>
 
               {/* Content Section */}
               <div className="p-6 space-y-4">
                 <div>
-                  <p className="text-xs font-semibold text-[#d4af37] uppercase tracking-widest">{car.category}</p>
-                  <h3 className="text-xl font-bold text-gray-900 mt-1">{car.name}</h3>
+                  <p className="text-xs font-semibold text-[#d4af37] uppercase tracking-widest">
+                    {car.category}
+                  </p>
+                  <h3 className="text-xl font-bold text-gray-900 mt-1">
+                    {car.name}
+                  </h3>
                 </div>
 
                 {/* Specs */}
@@ -105,14 +119,18 @@ export default function FeaturedCarsSection() {
                   {Object.entries(car.specs).map(([key, value]) => (
                     <div key={key} className="flex justify-between text-sm">
                       <span className="text-gray-600 capitalize">{key}</span>
-                      <span className="font-semibold text-gray-900">{value}</span>
+                      <span className="font-semibold text-gray-900">
+                        {value}
+                      </span>
                     </div>
                   ))}
                 </div>
 
                 {/* Price */}
                 <div className="pt-4 border-t border-gray-200">
-                  <p className="text-2xl font-bold text-gray-900">{car.price}</p>
+                  <p className="text-2xl font-bold text-gray-900">
+                    {car.price}
+                  </p>
                 </div>
 
                 {/* CTA */}
@@ -126,9 +144,7 @@ export default function FeaturedCarsSection() {
 
         {/* View All Button */}
         <div className="mt-12 text-center">
-          <button className="btn-primary inline-flex">
-            View All Models
-          </button>
+          <button className="btn-primary inline-flex">View All Models</button>
         </div>
       </div>
     </section>

@@ -90,16 +90,28 @@ export default function Footer() {
         <div className="border-t border-gray-800 pt-8">
           {/* Social Links */}
           <div className="flex justify-center gap-6 mb-8">
-            <a href="#" className="text-gray-400 hover:text-[#d4af37] transition-colors">
+            <a
+              href="#"
+              className="text-gray-400 hover:text-[#d4af37] transition-colors"
+            >
               <Facebook className="w-5 h-5" />
             </a>
-            <a href="#" className="text-gray-400 hover:text-[#d4af37] transition-colors">
+            <a
+              href="#"
+              className="text-gray-400 hover:text-[#d4af37] transition-colors"
+            >
               <Instagram className="w-5 h-5" />
             </a>
-            <a href="#" className="text-gray-400 hover:text-[#d4af37] transition-colors">
+            <a
+              href="#"
+              className="text-gray-400 hover:text-[#d4af37] transition-colors"
+            >
               <Twitter className="w-5 h-5" />
             </a>
-            <a href="#" className="text-gray-400 hover:text-[#d4af37] transition-colors">
+            <a
+              href="#"
+              className="text-gray-400 hover:text-[#d4af37] transition-colors"
+            >
               <Linkedin className="w-5 h-5" />
             </a>
           </div>
@@ -107,7 +119,8 @@ export default function Footer() {
           {/* Copyright */}
           <div className="text-center text-gray-400 text-sm">
             <p>
-              &copy; {currentYear} LuxeDrive. All rights reserved. | Privacy Policy | Terms of Service
+              &copy; {currentYear} LuxeDrive. All rights reserved. | Privacy
+              Policy | Terms of Service
             </p>
           </div>
         </div>
